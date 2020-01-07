@@ -11,11 +11,11 @@
 Thumbs.db
 .project
 .*proj
-.svn/
+.svn
 *.swp
 *.swo
 *.log
-node_modules/
+node_modules
 .buildpath
 .settings
 npm-debug.log
