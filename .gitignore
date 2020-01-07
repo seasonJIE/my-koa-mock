@@ -11,3 +11,4 @@ __build__
 
 tags
 *.swp
+package-lock.json
