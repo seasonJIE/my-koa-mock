@@ -1,0 +1,18 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "list": [
+      {
+        "skuId": 21,
+        "manufacturerCode": "产品编码",
+        "articleNumber": "条形码",
+        "productName": "产品名称",
+        "productCategoryName": "产品分类",
+        "productLevelName": 21,
+        "productSeriesName": "产品系列"
+      }
+    ],
+    "count": 21
+  }
+}

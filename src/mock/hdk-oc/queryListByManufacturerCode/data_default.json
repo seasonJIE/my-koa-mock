@@ -1,0 +1,15 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": [
+    {
+      "text": "产品1",
+      "value": "1",
+      "data": {
+        "manufacturerCode": 12313,
+        "productName": "阿斯达",
+        "articleNumber": 1231233
+      }
+    }
+  ]
+}

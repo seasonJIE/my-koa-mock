@@ -1,0 +1,1869 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": [
+    {
+      "id": 10,
+      "isActive": true,
+      "isMenu": 1,
+      "level": 0,
+      "name": "库存管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 2962,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_304",
+          "level": 0,
+          "name": "库存查询",
+          "parentId": 10,
+          "permissionId": [
+            5054
+          ],
+          "sequence": 2,
+          "subMenu": [],
+          "type": 1,
+          "url": "/aos/autoPage/demo"
+        },
+        {
+          "id": 67,
+          "isActive": true,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_29",
+          "level": 0,
+          "name": "期末期初库存报表",
+          "parentId": 10,
+          "permissionId": [
+            53
+          ],
+          "sequence": 3,
+          "subMenu": [],
+          "type": 1,
+          "url": "/aos/stock/aosPurchase/itemInfo/edit"
+        },
+        {
+          "id": 65708,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65708",
+          "level": 0,
+          "name": "门店库存查询",
+          "parentId": 10,
+          "permissionId": [
+            65312
+          ],
+          "sequence": 3,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/sapStockSearch/manage"
+        },
+        {
+          "id": 65713,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65713",
+          "level": 0,
+          "name": "期初期末库存查询",
+          "parentId": 10,
+          "permissionId": [
+            65317
+          ],
+          "sequence": 4,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/stockInOutSearch/manage"
+        },
+        {
+          "id": 65776,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65776",
+          "level": 0,
+          "name": "逻辑库存查询",
+          "parentId": 10,
+          "permissionId": [
+            65346
+          ],
+          "sequence": 5,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/logicStockSku/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 11,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "订货管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 551,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_164",
+          "level": 0,
+          "name": "直营订货单",
+          "parentId": 11,
+          "permissionId": [
+            5043,
+            5044
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/purchaseReceipt/direct/manage"
+        },
+        {
+          "iconUrl": "",
+          "id": 65785,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_DirectPurchaseReport",
+          "level": 0,
+          "name": "总部下单查询(按天)",
+          "parentId": 11,
+          "permissionId": [
+            65351
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/purchaseReceipt/direct/report"
+        },
+        {
+          "id": 65147,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65146",
+          "level": 0,
+          "name": "自动订货单",
+          "parentId": 11,
+          "permissionId": [
+            6232,
+            6233
+          ],
+          "sequence": 2,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/purchaseReceipt/autoOrder/manage"
+        },
+        {
+          "id": 65701,
+          "isActive": false,
+          "isMenu": 1,
+          "level": 0,
+          "name": "建议订货单",
+          "parentId": 11,
+          "sequence": 0,
+          "subMenu": [
+            {
+              "id": 65702,
+              "isActive": false,
+              "isMenu": 1,
+              "languageKey": "user_menu_name_65702",
+              "level": 0,
+              "name": "建议订货单管理页",
+              "parentId": 65701,
+              "permissionId": [
+                65302,
+                65303
+              ],
+              "sequence": 1,
+              "subMenu": [],
+              "type": 1,
+              "url": "/stock2/purchaseReceipt/suggestOrder/edit"
+            }
+          ],
+          "type": 0,
+          "url": "/stock2/purchaseReceipt/suggestOrder/manage"
+        },
+        {
+          "id": 560,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_169",
+          "level": 0,
+          "name": "买断订货单",
+          "parentId": 11,
+          "permissionId": [
+            5021,
+            5022
+          ],
+          "sequence": 3,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/purchaseReceipt/buyout/manage"
+        },
+        {
+          "id": 65703,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65703",
+          "level": 0,
+          "name": "TA单位设置",
+          "parentId": 11,
+          "permissionId": [
+            65306,
+            65307
+          ],
+          "sequence": 3,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/posTAConfig/manage"
+        },
+        {
+          "iconUrl": "",
+          "id": 561,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_170",
+          "level": 0,
+          "name": "经销商订货单",
+          "parentId": 11,
+          "permissionId": [
+            5023,
+            5024
+          ],
+          "sequence": 4,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/purchaseReceipt/lsp/manage"
+        },
+        {
+          "id": 65704,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65704",
+          "level": 0,
+          "name": "门店等级设置",
+          "parentId": 11,
+          "permissionId": [
+            65304,
+            65305
+          ],
+          "sequence": 4,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/shopLevel/manage"
+        },
+        {
+          "id": 564,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_173",
+          "level": 0,
+          "name": "经销商门店订货单",
+          "parentId": 11,
+          "permissionId": [
+            5019,
+            5020
+          ],
+          "sequence": 5,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/purchaseReceipt/lspShop/manage"
+        },
+        {
+          "id": 65705,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65705",
+          "level": 0,
+          "name": "门店建议订货对象产品管理",
+          "parentId": 11,
+          "permissionId": [
+            65308,
+            65309
+          ],
+          "sequence": 5,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/suggestOrderProduct/manage"
+        },
+        {
+          "iconUrl": "",
+          "id": 62000,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_402",
+          "level": 0,
+          "name": "经销商digital订货单",
+          "parentId": 11,
+          "permissionId": [
+            5087
+          ],
+          "sequence": 6,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/purchaseReceipt/lspDigital/manage"
+        },
+        {
+          "id": 65706,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65706",
+          "level": 0,
+          "name": "门店建议订货天数管理",
+          "parentId": 11,
+          "permissionId": [
+            65310,
+            65311
+          ],
+          "sequence": 6,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/suggestOrderConfig/manage"
+        },
+        {
+          "iconUrl": "",
+          "id": 2969,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_174",
+          "level": 0,
+          "name": "许可/除外查询",
+          "parentId": 11,
+          "permissionId": [
+            119
+          ],
+          "sequence": 15,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/exceptLicense/manage"
+        },
+        {
+          "id": 3013,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_336",
+          "level": 0,
+          "name": "订货配额管理",
+          "parentId": 11,
+          "permissionId": [
+            152
+          ],
+          "sequence": 23,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/orderQuota/manage"
+        },
+        {
+          "id": 65780,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65780",
+          "level": 0,
+          "name": "新老产品替换查询",
+          "parentId": 11,
+          "permissionId": [
+            65347
+          ],
+          "sequence": 24,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/productRelace/manage"
+        },
+        {
+          "id": 2977,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_313",
+          "level": 0,
+          "name": "订货付款限制管理",
+          "parentId": 11,
+          "permissionId": [
+            5094
+          ],
+          "sequence": 30,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/purchasePayLimit/manage"
+        },
+        {
+          "iconUrl": "",
+          "id": 65100,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "stock2_purchaseReceipt_multipleWare_manage",
+          "level": 0,
+          "name": "直营订货大仓管理",
+          "parentId": 11,
+          "permissionId": [
+            6120,
+            6121
+          ],
+          "sequence": 31,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/purchaseReceipt/multipleWare/manage"
+        },
+        {
+          "id": 65304,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65303",
+          "level": 0,
+          "name": "品牌组信息管理",
+          "parentId": 11,
+          "permissionId": [
+            66638,
+            66639,
+            6249
+          ],
+          "sequence": 32,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/organizationPurchase/brandGroup/manage"
+        },
+        {
+          "id": 65745,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65745",
+          "level": 0,
+          "name": "经销商订货审批黑名单",
+          "parentId": 11,
+          "permissionId": [
+            66660
+          ],
+          "sequence": 51,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/purchaseReceipt/lspPurcahseWhiteList/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 12,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "订单入库管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 568,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_177",
+          "level": 0,
+          "name": "直营订单入库",
+          "parentId": 12,
+          "permissionId": [
+            5041,
+            5042
+          ],
+          "sequence": 15,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/invoiceReceipt/direct/manage"
+        },
+        {
+          "id": 569,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_178",
+          "level": 0,
+          "name": "买断订单入库",
+          "parentId": 12,
+          "permissionId": [
+            5025,
+            5026
+          ],
+          "sequence": 16,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/invoiceReceipt/buyout/manage"
+        },
+        {
+          "id": 570,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_179",
+          "level": 0,
+          "name": "经销商订单入库",
+          "parentId": 12,
+          "permissionId": [
+            5027,
+            5028
+          ],
+          "sequence": 17,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/invoiceReceipt/lsp/manage"
+        },
+        {
+          "id": 62500,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_404",
+          "level": 0,
+          "name": "经销商digital订单入库",
+          "parentId": 12,
+          "permissionId": [
+            5092
+          ],
+          "sequence": 18,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/invoiceReceipt/lspDigital/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 50013,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "订单发货管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 571,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_180",
+          "level": 0,
+          "name": "经销商门店发货单",
+          "parentId": 50013,
+          "permissionId": [
+            5029,
+            5030
+          ],
+          "sequence": 18,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/invoiceReceipt/lspShop/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 13,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "退库管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 2586,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_225",
+          "level": 0,
+          "name": "直营退库单",
+          "parentId": 13,
+          "permissionId": [
+            5039,
+            5040
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/returnStockReceipt/direct/manage"
+        },
+        {
+          "id": 2889,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_247",
+          "level": 0,
+          "name": "买断退库单",
+          "parentId": 13,
+          "permissionId": [
+            5032,
+            5031
+          ],
+          "sequence": 2,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/returnStockReceipt/buyout/manage"
+        },
+        {
+          "id": 2890,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_248",
+          "level": 0,
+          "name": "经销商退库单",
+          "parentId": 13,
+          "permissionId": [
+            5034,
+            5033
+          ],
+          "sequence": 3,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/returnStockReceipt/lsp/manage"
+        },
+        {
+          "id": 2862,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_228",
+          "level": 0,
+          "name": "经销商门店退库单",
+          "parentId": 13,
+          "permissionId": [
+            5035,
+            5036
+          ],
+          "sequence": 4,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/returnStockReceipt/lspShop/manage"
+        },
+        {
+          "id": 61000,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_400",
+          "level": 0,
+          "name": "经销商digital退库单",
+          "parentId": 13,
+          "permissionId": [
+            5091
+          ],
+          "sequence": 18,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/returnStockReceipt/lspDigital/manage"
+        },
+        {
+          "id": 2583,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_222",
+          "level": 0,
+          "name": "退库限额查询",
+          "parentId": 13,
+          "permissionId": [
+            125
+          ],
+          "sequence": 22,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/APCReturnLimitNum/manage"
+        },
+        {
+          "id": 65228,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65217",
+          "level": 0,
+          "name": "差异退库单",
+          "parentId": 13,
+          "permissionId": [
+            6270
+          ],
+          "sequence": 25,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/returnStockReceipt/difference/manage"
+        },
+        {
+          "id": 572,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_181",
+          "level": 0,
+          "name": "退库逻辑仓库设置",
+          "parentId": 13,
+          "permissionId": [
+            5001
+          ],
+          "sequence": 27,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/returnLogicConfig/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 2926,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "杂出单管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 2892,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_250",
+          "level": 0,
+          "name": "SAP杂出入库单",
+          "parentId": 2926,
+          "permissionId": [
+            5018
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/zaInReceipt/manage"
+        },
+        {
+          "id": 2953,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_301",
+          "level": 0,
+          "name": "直营自主杂出单",
+          "parentId": 2926,
+          "permissionId": [
+            5055,
+            5056
+          ],
+          "sequence": 2,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/zaOutReceipt/direct/manage"
+        },
+        {
+          "id": 65142,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_00030",
+          "level": 0,
+          "name": "促销产品管理",
+          "parentId": 2926,
+          "permissionId": [
+            6215,
+            6216
+          ],
+          "sequence": 4,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/outProduct/manage"
+        },
+        {
+          "id": 65219,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_00080",
+          "level": 0,
+          "name": "制服产品管理",
+          "parentId": 2926,
+          "permissionId": [
+            65341,
+            65342
+          ],
+          "sequence": 4,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/outProduct/uniform/manage"
+        },
+        {
+          "id": 65700,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_00777",
+          "level": 0,
+          "name": "每月促销品管理",
+          "parentId": 2926,
+          "permissionId": [
+            65300,
+            65301
+          ],
+          "sequence": 6,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/monthOutProduct/manage"
+        },
+        {
+          "id": 2886,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_244",
+          "level": 0,
+          "name": "杂出逻辑仓库设置",
+          "parentId": 2926,
+          "permissionId": [
+            5003
+          ],
+          "sequence": 7,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/outLogicConfig/manage"
+        },
+        {
+          "id": 65216,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65216",
+          "level": 0,
+          "name": "促销品销量现况查询",
+          "parentId": 2926,
+          "permissionId": [
+            65199
+          ],
+          "sequence": 8,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/promotionProduct/manage"
+        },
+        {
+          "id": 65711,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65711",
+          "level": 0,
+          "name": "促销品库存查询",
+          "parentId": 2926,
+          "permissionId": [
+            65316
+          ],
+          "sequence": 9,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/promotionStockSearch/manage"
+        },
+        {
+          "id": 65746,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65746",
+          "level": 0,
+          "name": "经销商杂出入库单",
+          "parentId": 2926,
+          "permissionId": [
+            66662
+          ],
+          "sequence": 10,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/lspZaInReceipt/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 2927,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "盘点管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 65731,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65731",
+          "level": 0,
+          "name": "设备管理",
+          "parentId": 2927,
+          "permissionId": [
+            65331,
+            65332
+          ],
+          "sequence": 6,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/equipment/manage"
+        },
+        {
+          "id": 65733,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65733",
+          "level": 0,
+          "name": "盘点枪调拨单管理",
+          "parentId": 2927,
+          "permissionId": [
+            65333,
+            65334
+          ],
+          "sequence": 6,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/equipment/allocate/manage"
+        },
+        {
+          "id": 65217,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65209",
+          "level": 0,
+          "name": "正常品盘点单管理",
+          "parentId": 2927,
+          "permissionId": [
+            65193,
+            65194,
+            5074,
+            65313,
+            65314,
+            65315
+          ],
+          "sequence": 8,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/normalCheckReceipt/manage"
+        },
+        {
+          "id": 65211,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65211",
+          "level": 0,
+          "name": "制服盘点单管理",
+          "parentId": 2927,
+          "permissionId": [
+            65195,
+            65196
+          ],
+          "sequence": 9,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/uniformCheckReceipt/manage"
+        },
+        {
+          "id": 65213,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65213",
+          "level": 0,
+          "name": "促销品盘点单管理",
+          "parentId": 2927,
+          "permissionId": [
+            65197,
+            65198
+          ],
+          "sequence": 9,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/promotionCheckReceipt/manage"
+        },
+        {
+          "id": 2989,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_319",
+          "level": 0,
+          "name": "直营门店(促销品)盘点单",
+          "parentId": 2927,
+          "permissionId": [
+            5057,
+            5058
+          ],
+          "sequence": 21,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/checkReceipt/direct/manage"
+        },
+        {
+          "id": 2997,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_323",
+          "level": 0,
+          "name": "买断门店盘点单",
+          "parentId": 2927,
+          "permissionId": [
+            5067,
+            5068
+          ],
+          "sequence": 24,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/checkReceipt/buyout/manage"
+        },
+        {
+          "id": 3002,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_326",
+          "level": 0,
+          "name": "经销商盘点单",
+          "parentId": 2927,
+          "permissionId": [
+            5069,
+            5070
+          ],
+          "sequence": 27,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/checkReceipt/lsp/manage"
+        },
+        {
+          "id": 3005,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_329",
+          "level": 0,
+          "name": "经销商门店盘点单",
+          "parentId": 2927,
+          "permissionId": [
+            5071,
+            5072
+          ],
+          "sequence": 30,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/checkReceipt/lspShop/manage"
+        },
+        {
+          "id": 554,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_167",
+          "level": 0,
+          "name": "盘点白名单管理",
+          "parentId": 2927,
+          "permissionId": [
+            116
+          ],
+          "sequence": 60,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/checkWhiteList/manage"
+        },
+        {
+          "id": 65772,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65772",
+          "level": 0,
+          "name": "经销商盘点白名单管理",
+          "parentId": 2927,
+          "permissionId": [
+            66690,
+            66690
+          ],
+          "sequence": 70,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/lspCheckWhiteList/manage"
+        },
+        {
+          "iconUrl": "",
+          "id": 65773,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "check_advance_check",
+          "level": 0,
+          "name": "盘点前检查",
+          "parentId": 2927,
+          "permissionId": [
+            66692
+          ],
+          "sequence": 71,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/checkAdvanceCheck/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 2940,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "移库管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 2936,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_290",
+          "level": 0,
+          "name": "移库单管理",
+          "parentId": 2940,
+          "permissionId": [
+            5045,
+            5046
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/moveStockReceipt/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 2941,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "出库管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 2922,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_277",
+          "level": 0,
+          "name": "专营店出库单",
+          "parentId": 2941,
+          "permissionId": [
+            5050,
+            5051
+          ],
+          "sequence": 26,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/outStockReceipt/specialtyShop/manage"
+        },
+        {
+          "id": 2943,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_295",
+          "level": 0,
+          "name": "其他出库单",
+          "parentId": 2941,
+          "permissionId": [
+            5048,
+            5049
+          ],
+          "sequence": 29,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/outStockReceipt/other/manage"
+        },
+        {
+          "iconUrl": "",
+          "id": 65120,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "stock2_otherOutLogicConfig_manage",
+          "level": 0,
+          "name": "其他出库逻辑仓库管理",
+          "parentId": 2941,
+          "permissionId": [
+            6122,
+            6123
+          ],
+          "sequence": 30,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/otherOutLogicConfig/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 2944,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "入库管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 2945,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_297",
+          "level": 0,
+          "name": "专营店退货入库单",
+          "parentId": 2944,
+          "permissionId": [
+            5052,
+            5053
+          ],
+          "sequence": 26,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/inStockReceipt/lsp/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 2972,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "调拨管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 10030,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_369",
+          "level": 0,
+          "name": "直营调拨单（正品）",
+          "parentId": 2972,
+          "permissionId": [
+            6030,
+            6029
+          ],
+          "sequence": 25,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/apcAllocateReceipt/directNormal/manage"
+        },
+        {
+          "id": 2973,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_311",
+          "level": 0,
+          "name": "直营调拨单(促销品)",
+          "parentId": 2972,
+          "permissionId": [
+            5059,
+            5060
+          ],
+          "sequence": 27,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/apcAllocateReceipt/directSmall/manage"
+        },
+        {
+          "id": 2979,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_315",
+          "level": 0,
+          "name": "经销商门店调拨单(正常品)",
+          "parentId": 2972,
+          "permissionId": [
+            5063,
+            5064
+          ],
+          "sequence": 31,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/apcAllocateReceipt/lspSame/manage"
+        },
+        {
+          "id": 2983,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_317",
+          "level": 0,
+          "name": "经销商仓库调拨单",
+          "parentId": 2972,
+          "permissionId": [
+            5065
+          ],
+          "sequence": 33,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/apcAllocateReceipt/lspDiff/manage"
+        },
+        {
+          "id": 65748,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65748",
+          "level": 0,
+          "name": "经销商门店调拨单(促销品)",
+          "parentId": 2972,
+          "permissionId": [
+            66665
+          ],
+          "sequence": 40,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/apcAllocateReceipt/lspSameUnNormal/manage"
+        },
+        {
+          "id": 65747,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65747",
+          "level": 0,
+          "name": "经销商调拨审批黑名单管理",
+          "parentId": 2972,
+          "permissionId": [
+            66663
+          ],
+          "sequence": 50,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/apcAllocateReceipt/lspAllocateReceiptWhiteList/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 63001,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "套装拆分管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 63004,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_63004",
+          "level": 0,
+          "name": "套装拆分单",
+          "parentId": 63001,
+          "permissionId": [
+            6103,
+            6102
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/apcSuiteSplitStockReceipt/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 65133,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "试用装管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 65134,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_00002",
+          "level": 0,
+          "name": "试用装配额管理",
+          "parentId": 65133,
+          "permissionId": [
+            6209,
+            6210
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/trialPack/manage"
+        },
+        {
+          "id": 65139,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "stock2_apcTrialPackStockReceipt_manage",
+          "level": 0,
+          "name": "试用装申请单",
+          "parentId": 65133,
+          "permissionId": [
+            6213
+          ],
+          "sequence": 8,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/apcTrialPackStockReceipt/manage"
+        },
+        {
+          "id": 65138,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "stock2_trialPack_used_manage",
+          "level": 0,
+          "name": "试用装使用情况",
+          "parentId": 65133,
+          "permissionId": [
+            6212
+          ],
+          "sequence": 10,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/trialPack/used/manage"
+        },
+        {
+          "id": 65741,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65741",
+          "level": 0,
+          "name": "试用装空瓶登记",
+          "parentId": 65133,
+          "permissionId": [
+            66649
+          ],
+          "sequence": 10,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/apcTrialPackEmptyBottleStockReceipt/manage"
+        },
+        {
+          "id": 65753,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65753",
+          "level": 0,
+          "name": "试用装装退库逻辑仓设置",
+          "parentId": 65133,
+          "permissionId": [
+            66667
+          ],
+          "sequence": 40,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/apcTrialPackLogicConfig/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 65766,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "顾客退货审批管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 65767,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65767",
+          "level": 0,
+          "name": "退货审批类型设置",
+          "parentId": 65766,
+          "permissionId": [
+            66685
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/refundApprovalType/manage"
+        },
+        {
+          "id": 65768,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65768",
+          "level": 0,
+          "name": "顾客退货审批白名单",
+          "parentId": 65766,
+          "permissionId": [
+            66687
+          ],
+          "sequence": 2,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/refundApprovalWhiteList/manage"
+        },
+        {
+          "id": 65769,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65769",
+          "level": 0,
+          "name": "顾客退货审批",
+          "parentId": 65766,
+          "permissionId": [
+            66689
+          ],
+          "sequence": 3,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/refundApproval/manage"
+        },
+        {
+          "iconUrl": "",
+          "id": 65787,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65787",
+          "level": 0,
+          "name": "特殊审批白名单",
+          "parentId": 65766,
+          "permissionId": [
+            66698
+          ],
+          "sequence": 4,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/specialApprovalWhiteList/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 2928,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "进销存配置管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 65144,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_66666",
+          "level": 0,
+          "name": "促销产品增长倍数设置",
+          "parentId": 2928,
+          "permissionId": [
+            6230,
+            6231
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/autoOrder/growthMultiplier/manage"
+        },
+        {
+          "id": 548,
+          "isActive": false,
+          "isMenu": 1,
+          "level": 0,
+          "name": "逻辑仓库管理",
+          "parentId": 2928,
+          "sequence": 0,
+          "subMenu": [
+            {
+              "id": 547,
+              "isActive": false,
+              "isMenu": 1,
+              "languageKey": "user_menu_name_161",
+              "level": 0,
+              "name": "查看逻辑仓库",
+              "parentId": 548,
+              "permissionId": [
+                70,
+                71
+              ],
+              "sequence": 6,
+              "subMenu": [],
+              "type": 1,
+              "url": "/stock2/logicStock/view"
+            }
+          ],
+          "type": 0,
+          "url": "/stock2/logicStock/manage"
+        },
+        {
+          "id": 2548,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_187",
+          "level": 0,
+          "name": "业务关系配置管理",
+          "parentId": 2928,
+          "permissionId": [
+            76,
+            77
+          ],
+          "sequence": 6,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/businessConfig/manage"
+        },
+        {
+          "id": 65114,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "StockPurchaseLimitCountConfig_manage",
+          "level": 0,
+          "name": "订货数量限制配置管理",
+          "parentId": 2928,
+          "permissionId": [
+            6205
+          ],
+          "sequence": 6,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/StockPurchaseLimitCountConfig/manage"
+        },
+        {
+          "id": 65143,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_00111",
+          "level": 0,
+          "name": "自动订货参数设置",
+          "parentId": 2928,
+          "permissionId": [
+            6217,
+            6218
+          ],
+          "sequence": 6,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/autoOrder/config/manage"
+        },
+        {
+          "id": 65010,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_500",
+          "level": 3,
+          "name": "建议订单参数设置",
+          "parentId": 2928,
+          "permissionId": [
+            5095
+          ],
+          "sequence": 7,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/suggestReceipt/manage"
+        },
+        {
+          "id": 63000,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_63000",
+          "level": 0,
+          "name": "套装拆分设置",
+          "parentId": 2928,
+          "permissionId": [
+            6100,
+            6101
+          ],
+          "sequence": 8,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/suiteSplitConfig/manage"
+        },
+        {
+          "id": 65145,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65145",
+          "level": 0,
+          "name": "自动订货产品对象管理",
+          "parentId": 2928,
+          "permissionId": [
+            6219,
+            6220
+          ],
+          "sequence": 8,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/autoOrder/exhibit/manage"
+        },
+        {
+          "id": 65744,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65744",
+          "level": 0,
+          "name": "编辑允许差异退库天数设置",
+          "parentId": 2928,
+          "permissionId": [
+            65335,
+            65336
+          ],
+          "sequence": 8,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/allowDiffReturn/manage"
+        },
+        {
+          "id": 65784,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65784",
+          "level": 0,
+          "name": "产品状态和允许业务查询",
+          "parentId": 2928,
+          "permissionId": [
+            65350
+          ],
+          "sequence": 9,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/productStatusBusinessRelation/manage"
+        },
+        {
+          "id": 65752,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65752",
+          "level": 0,
+          "name": "经销商入库超时限制",
+          "parentId": 2928,
+          "permissionId": [
+            65338
+          ],
+          "sequence": 201,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/lspStockTimeLimit/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 65771,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "门店陈列品管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 65756,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65756",
+          "level": 0,
+          "name": "门店陈列品管理",
+          "parentId": 65771,
+          "permissionId": [
+            66671
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/stockShopColumnCount/manage"
+        },
+        {
+          "id": 65759,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65759",
+          "level": 0,
+          "name": "门店陈列品记录报表",
+          "parentId": 65771,
+          "permissionId": [
+            66674
+          ],
+          "sequence": 2,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/stockShopColumnCountReport/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    },
+    {
+      "id": 65754,
+      "isActive": false,
+      "isMenu": 1,
+      "level": 0,
+      "name": "缺货申报管理",
+      "parentId": 6,
+      "sequence": 0,
+      "subMenu": [
+        {
+          "id": 65755,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65755",
+          "level": 0,
+          "name": "设置区域周转天数",
+          "parentId": 65754,
+          "permissionId": [
+            66670
+          ],
+          "sequence": 1,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/settingRegionTurnoverDays/manage"
+        },
+        {
+          "id": 65757,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65757",
+          "level": 0,
+          "name": "门店缺货上报日期设定",
+          "parentId": 65754,
+          "permissionId": [
+            66672
+          ],
+          "sequence": 2,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/storeShortageReportTimeLimit/manage"
+        },
+        {
+          "id": 65758,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65758",
+          "level": 0,
+          "name": "门店缺货申报",
+          "parentId": 65754,
+          "permissionId": [
+            66673
+          ],
+          "sequence": 3,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/stockObtainedProduct/manage"
+        },
+        {
+          "id": 65760,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65760",
+          "level": 0,
+          "name": "门店缺货记录报表",
+          "parentId": 65754,
+          "permissionId": [
+            66675
+          ],
+          "sequence": 6,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/stockObtainedProductShopReport/manage"
+        },
+        {
+          "id": 65761,
+          "isActive": false,
+          "isMenu": 1,
+          "languageKey": "user_menu_name_65761",
+          "level": 0,
+          "name": "区域缺货记录报表",
+          "parentId": 65754,
+          "permissionId": [
+            66676
+          ],
+          "sequence": 7,
+          "subMenu": [],
+          "type": 1,
+          "url": "/stock2/stockObtainedProductRegionReport/manage"
+        }
+      ],
+      "type": 0,
+      "url": ""
+    }
+  ]
+}

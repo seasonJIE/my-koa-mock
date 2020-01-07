@@ -1,0 +1,16 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": [
+    {
+      "text": "上海",
+      "value": 1,
+      "children": [
+        {
+          "text": "黄埔",
+          "value": 2
+        }
+      ]
+    }
+  ]
+}

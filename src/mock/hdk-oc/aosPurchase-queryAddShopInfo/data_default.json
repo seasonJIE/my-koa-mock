@@ -1,0 +1,30 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "list": [
+      {
+        "orgId": 1,
+        "orgSerial": "CN001",
+        "orgName": "测试门店",
+        "shopLevelDesc": "S1",
+        "address": "上海"
+      },
+      {
+        "orgId": 1,
+        "orgSerial": "CN001",
+        "orgName": "测试门店",
+        "shopLevelDesc": "S1",
+        "address": "上海"
+      },
+      {
+        "orgId": 1,
+        "orgSerial": "CN001",
+        "orgName": "测试门店",
+        "shopLevelDesc": "S1",
+        "address": "上海"
+      }
+    ],
+    "count": 21
+  }
+}

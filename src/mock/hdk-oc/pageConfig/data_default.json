@@ -1,0 +1,879 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "config": {
+      "beforeRender": [
+        {
+          "action": {
+            "type": "$post",
+            "request": {
+              "url": "/aos/common/qlPermissionHideBtn",
+              "params": {
+                "permissionList": [
+                  {
+                    "permissionId": 123,
+                    "noPermissionKey": "hideBtn"
+                  }
+                ]
+              },
+              "setData": {
+                "hideBtn": "data.hideBtn"
+              }
+            }
+          }
+        }
+      ],
+      "pageConfig": [
+        {
+          "type": "criteria",
+          "criterion": [
+            {
+              "pathKey": "input",
+              "title": "input",
+              "widget": {
+                "type": "$input",
+                "props": {
+                  "placeholder": "multi_language{asdasd}"
+                }
+              }
+            },
+            {
+              "pathKey": "treeSelect",
+              "title": "treeSelect",
+              "widget": {
+                "type": "$treeSelect",
+                "request": {
+                  "url": "/oc/cascader",
+                  "params": {
+                    "text": "123123"
+                  }
+                },
+                "props": {
+                  "multiple": true,
+                  "placeholder": "请选择门店",
+                  "showSearch": true,
+                  "treeCheckable": true,
+                  "checkedStrategy": "SHOW_CHILD",
+                  "treeNodeFilterProp": "text"
+                }
+              }
+            },
+            {
+              "pathKey": "cascader",
+              "title": "cascader",
+              "widget": {
+                "type": "$cascader",
+                "request": {
+                  "url": "/oc/cascader",
+                  "params": {}
+                },
+                "props": {
+                  "placeholder": "multi_language{util_input_shop}",
+                  "showSearch": true,
+                  "changeOnSelect": true
+                }
+              }
+            },
+            {
+              "pathKey": "select",
+              "title": "select",
+              "widget": {
+                "type": "$select",
+                "request": {
+                  "url": "/oc/options",
+                  "params": {}
+                },
+                "props": {
+                  "placeholder": "multi_language{util_input_shop}"
+                }
+              }
+            },
+            {
+              "pathKey": "searchInput",
+              "title": "searchInput",
+              "widget": {
+                "type": "$searchInput",
+                "request": {
+                  "url": "/oc/options",
+                  "params": {}
+                },
+                "props": {
+                  "placeholder": "multi_language{util_input_shop}"
+                }
+              }
+            },
+            {
+              "pathKey": "dateRange",
+              "title": "dateRange",
+              "widget": {
+                "type": "$dateRange",
+                "props": {
+                  "showTime": false
+                }
+              }
+            },
+            {
+              "pathKey": "datePicker",
+              "title": "datePicker",
+              "widget": {
+                "type": "$datePicker",
+                "props": {
+                  "showTime": true,
+                  "format": "YYYY-MM-DD HH:mm:ss"
+                }
+              }
+            },
+            {
+              "pathKey": "month",
+              "title": "month",
+              "widget": {
+                "type": "$monthPicker"
+              }
+            }
+          ],
+          "onSearch": {
+            "request": {
+              "url": "/oc/qlSearch",
+              "page": "page",
+              "conditions": "conditions"
+            },
+            "data": "list",
+            "count": "count",
+            "page": "page",
+            "loading": "loading",
+            "showTable": "showTable"
+          },
+          "buttonList": [
+            {
+              "text": "跳转",
+              "hide": "hideBtn",
+              "action": {
+                "type": "$link",
+                "request": {
+                  "type": "$newTab",
+                  "url": "/xx",
+                  "params": {
+                    "id": "stockReceiptId"
+                  }
+                }
+              }
+            },
+            {
+              "text": "提交",
+              "type": "ghost",
+              "action": {
+                "type": "$post",
+                "request": {
+                  "url": "/oc/qlSearch",
+                  "params": {
+                    "id": "list[0].name"
+                  },
+                  "setData": {
+                    "list": "data.list",
+                    "modalVisible": true
+                  },
+                  "msgError": true,
+                  "msgSuccess": "成功信息固定"
+                },
+                "link": {
+                  "request": {
+                    "type": "$newPage",
+                    "url": "/xx",
+                    "params": {
+                      "id": "list[0].name"
+                    },
+                    "resParams": {
+                      "id2": "data.list[0].name"
+                    }
+                  }
+                },
+                "beforePost": {
+                  "validateForm": "formId",
+                  "setData": {
+                    "list": "data.list",
+                    "modalVisible": true
+                  }
+                },
+                "afterPost": {
+
+                }
+              }
+            },
+            {
+              "text": "打开弹窗",
+              "action": {
+                "type": "$setData",
+                "setData": {
+                  "modalVisible": true
+                }
+              }
+            },
+            {
+              "action": {
+                "type": "$download",
+                "props": {
+                  "conditions": "conditions",
+                  "type": 234,
+                  "list": "list"
+                }
+              }
+            },
+            {
+              "action": {
+                "type": "$upload",
+                "props": {
+                  "async": true,
+                  "params": "params",
+                  "type": 234
+                },
+                "getResponse": {
+                  "setData": {
+                    "list": "data.list"
+                  }
+                },
+                "onCancel": {
+                  "isTable": true,
+                  "request": {
+                    "url": "/oc/qlSearch",
+                    "page": "page",
+                    "conditions": "conditions"
+                  },
+                  "setData": {
+                    "list": "data.list"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "showTable": "showTable",
+          "columns": [
+            {
+              "pathKey": "name",
+              "title": "multi_language{asdasd}",
+              "infoMessage": "阿斯顿撒大萨达撒多",
+              "render": [
+                {
+                  "pathKey": "list",
+                  "label": "list",
+                  "type": "$list"
+                },
+                {
+                  "pathKey": "time",
+                  "label": "时间",
+                  "type": "$date",
+                  "options": {
+                    "format": "YYYY-MM-DD"
+                  }
+                }
+              ]
+            },
+            {
+              "pathKey": "name2",
+              "title": "multi_language{asdasd}",
+              "label": "jeep",
+              "infoMessage": "阿斯顿撒大萨达撒多"
+            },
+            {
+              "pathKey": "job",
+              "title": "工作",
+              "infoMessage": "阿斯顿撒大萨达撒多",
+              "children": [
+                {
+                  "key": "age",
+                  "title": "children-age",
+                  "infoMessage": "阿斯顿撒大萨达撒多",
+                  "render": [
+                    {
+                      "pathKey": "age",
+                      "type": {
+                        "value": "$link",
+                        "options": {
+                          "target": "$newTab",
+                          "path": "/report2/sales/detail",
+                          "params": {
+                            "orderId": "age",
+                            "orderType": "job"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "key": "age",
+              "title": "age",
+              "infoMessage": "阿斯顿撒大萨达撒多",
+              "render": [
+                {
+                  "pathKey": "age",
+                  "type": {
+                    "value": "$link",
+                    "options": {
+                      "target": "$newTab",
+                      "path": "/report2/sales/detail",
+                      "params": {
+                        "orderId": "age",
+                        "orderType": "job"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "key": "operation",
+              "title": "操作",
+              "render": [
+                {
+                  "text": "查看",
+                  "key": "viewItem",
+                  "type": {
+                    "value": "$link",
+                    "options": {
+                      "target": "$newPage",
+                      "path": "/report2/sales/detail",
+                      "params": {
+                        "orderId": "age",
+                        "orderType": "job"
+                      }
+                    }
+                  }
+                },
+                {
+                  "key": "delItem",
+                  "text":"删除",
+                  "type": {
+                    "value": "$link",
+                    "options": {
+                      "target": "$popconfirm",
+                      "value": "确认删除"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "data": "list",
+          "page": "page",
+          "onSearch": {
+            "request": {
+              "url": "/oc/qlSearch",
+              "page": "page",
+              "conditions": "conditions"
+            }
+          },
+          "showSerial": true,
+          "loading": "loading",
+          "checkable": true,
+          "selectedRowKeys": "selectedRowKeys",
+          "onCheck": {
+            "selectedRowKeys": "selectedRowKeys",
+            "selectedRows": "selectedRows"
+          },
+          "applyObject": {
+            "delItem": {
+              "type": "$post",
+              "request": {
+                "url": "/oc/qlSearch",
+                "params": {
+
+                }
+              }
+            }
+          },
+          "getCheckboxProps": ""
+        },
+        {
+          "type": "grid",
+          "columns": [
+            {
+              "title": "name",
+              "pathKey": "name",
+              "infoMessage": "aasd"
+            },
+            {
+              "title": "input",
+              "pathKey": "job",
+              "readonly": true,
+              "widget": {
+                "type": "$input"
+              }
+            },
+            {
+              "title": "autoComplete",
+              "pathKey": "autoComplete",
+              "readonly": false,
+              "widget": {
+                "type": "$autoComplete",
+                "request": {
+                  "url": "/oc/gridAutoComplete",
+                  "params": {
+                    "text": "abab"
+                  }
+                },
+                "link": {
+                  "autoComplete": "autoComplete",
+                  "job": "job",
+                  "name": "sex"
+                }
+              }
+            },
+            {
+              "title": "requestAutoComplete",
+              "pathKey": "requestAutoComplete",
+              "readonly": false,
+              "widget": {
+                "type": "$autoComplete",
+                "request": {
+                  "url": "/oc/gridAutoComplete"
+                },
+                "autoRequest": {
+                  "url": "/oc/gridCheckSku",
+                  "data": "skuVo"
+                },
+                "link": "all"
+              }
+            },
+            {
+              "title": "select",
+              "pathKey": "select",
+              "widget": {
+                "type": "$select"
+              }
+            },
+            {
+              "title": "dataRange",
+              "pathKey": "dataRange",
+              "widget": {
+                "type": "$dateRange"
+              }
+            },
+            {
+              "title": "dataPicker",
+              "pathKey": "dataPicker",
+              "widget": {
+                "type": "$datePicker"
+              }
+            },
+            {
+              "title": "monthPicker",
+              "pathKey": "monthPicker",
+              "widget": {
+                "type": "$monthPicker"
+              }
+            }
+          ],
+          "props": {
+            "width": "220"
+          },
+          "data": "data",
+          "params": "formData",
+          "onChange": "onGridChange"
+        },
+        {
+          "id": "formId",
+          "type": "form",
+          "data": "formData",
+          "columns": [
+            {
+              "title": "父级标题",
+              "pathKey": "settings",
+              "children": [
+                {
+                  "pathKey": "input",
+                  "title": "input",
+                  "widget": {
+                    "type": "$input",
+                    "props": {
+                      "placeholder": "二和"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "pathKey": "input",
+              "title": "input",
+              "widget": {
+                "type": "$input",
+                "props": {
+                  "placeholder": "二和"
+                },
+                "pattern": {
+                  "rule": "^[0-9a-zA-Z]{1,2}$",
+                  "text": "输入任意字符1个"
+                },
+                "require": "必填项"
+              }
+            },
+            {
+              "pathKey": "treeSelect",
+              "title": "treeSelect",
+              "widget": {
+                "type": "$treeSelect",
+                "request": {
+                  "url": "/oc/cascader",
+                  "params": {
+                    "text": "Number_123123"
+                  }
+                },
+                "props": {
+                  "multiple": true,
+                  "placeholder": "请选择门店",
+                  "showCheckedStrategy": "SHOW_CHILD",
+                  "showSearch": true,
+                  "treeCheckable": true,
+                  "treeNodeFilterProp": "text"
+                }
+              }
+            },
+            {
+              "pathKey": "cascader",
+              "title": "cascader",
+              "widget": {
+                "type": "$cascader",
+                "request": {
+                  "url": "/oc/cascader",
+                  "params": {}
+                },
+                "props": {
+                  "placeholder": "multi_language{util_input_shop}",
+                  "showSearch": true
+                }
+              }
+            },
+            {
+              "pathKey": "select",
+              "title": "select",
+              "infoMessage": "select",
+              "widget": {
+                "type": "$select",
+                "request": {
+                  "url": "/oc/options",
+                  "params": {
+                    "input2": "input",
+                    "treeSelect": "treeSelect"
+                  }
+                },
+                "props": {
+                  "placeholder": "multi_language{util_input_shop}"
+                }
+              }
+            },
+            {
+              "pathKey": "searchInput",
+              "title": "searchInput",
+              "widget": {
+                "type": "$searchInput",
+                "request": {
+                  "url": "/oc/options",
+                  "params": {}
+                },
+                "props": {
+                  "placeholder": "multi_language{util_input_shop}"
+                }
+              }
+            },
+            {
+              "pathKey": "dateRange",
+              "title": "dateRange",
+              "widget": {
+                "type": "$dateRange"
+              }
+            },
+            {
+              "pathKey": "datePicker",
+              "title": "datePicker",
+              "widget": {
+                "type": "$datePicker",
+                "props": {
+                  "showTime": true,
+                  "format": "YYYY-MM-DD HH:mm:ss"
+                }
+              }
+            },
+            {
+              "pathKey": "month",
+              "title": "month",
+              "infoMessage": "阿斯达",
+              "widget": {
+                "type": "$monthPicker"
+              }
+            },
+            {
+              "pathKey": "radio",
+              "title": "radio",
+              "widget": {
+                "type": "$radio",
+                "defaultValue": 11,
+                "request": {
+                  "url": "/oc/options"
+                }
+              }
+            },
+            {
+              "pathKey": "checkboxGroup",
+              "title": "checkboxGroup",
+              "infoMessage": "阿斯达",
+              "widget": {
+                "type": "$checkbox",
+                "request": {
+                  "url": "/oc/options"
+                }
+              }
+            },
+            {
+              "pathKey": "imgUpload",
+              "title": "imgUpload",
+              "infoMessage": "imgUpload",
+              "widget": {
+                "type": "$imgUpload",
+                "request": {
+                  "url": "/oc/options"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "buttonList",
+          "buttonList": [
+            {
+              "text": "跳转",
+              "popConfirm": "确认跳转？",
+              "hide": "hideBtn",
+              "action": {
+                "type": "$link",
+                "request": {
+                  "type": "$newTab",
+                  "url": "/xx",
+                  "params": {
+                    "id": "stockReceiptId"
+                  }
+                }
+              }
+            },
+            {
+              "text": "提交",
+              "type": "ghost",
+              "action": {
+                "type": "$post",
+                "request": {
+                  "url": "/oc/qlSearch",
+                  "params": {
+                    "id": "formData"
+                  },
+                  "setData": {
+                    "list": "data.list",
+                    "modalVisible": true
+                  },
+                  "msgError": true,
+                  "msgSuccess": "成功信息固定"
+                },
+                "link": {
+                  "request": {
+                    "type": "$newPage",
+                    "url": "/xx",
+                    "params": {
+                      "id": "list[0].name"
+                    },
+                    "resParams": {
+                      "id2": "data.list[0].name"
+                    }
+                  }
+                },
+                "beforePost": {
+                  "validateForm": "formId",
+                  "setData": {
+                    "list": "data.list",
+                    "modalVisible": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "modal",
+          "title": "呵呵哒",
+          "visible": "modalVisible",
+          "children": [
+            {
+              "id": "form",
+              "type": "form",
+              "data": "formData",
+              "columns": [
+                {
+                  "title": "父级标题",
+                  "pathKey": "settings",
+                  "children": [
+                    {
+                      "pathKey": "input",
+                      "title": "input",
+                      "widget": {
+                        "type": "$input",
+                        "props": {
+                          "placeholder": "二和"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "pathKey": "input",
+                  "title": "input",
+                  "widget": {
+                    "type": "$input",
+                    "props": {
+                      "placeholder": "二和"
+                    },
+                    "pattern": {
+                      "rule": "^[0-9a-zA-Z]{1,2}$",
+                      "text": "输入任意字符1个"
+                    },
+                    "require": "必填项"
+                  }
+                },
+                {
+                  "pathKey": "treeSelect",
+                  "title": "treeSelect",
+                  "widget": {
+                    "type": "$treeSelect",
+                    "request": {
+                      "url": "/oc/cascader",
+                      "params": {
+                        "text": "Number_123123"
+                      }
+                    },
+                    "props": {
+                      "multiple": true,
+                      "placeholder": "请选择门店",
+                      "showSearch": true,
+                      "treeCheckable": true,
+                      "treeNodeFilterProp": "text"
+                    }
+                  }
+                },
+                {
+                  "pathKey": "cascader",
+                  "title": "cascader",
+                  "widget": {
+                    "type": "$cascader",
+                    "request": {
+                      "url": "/oc/cascader",
+                      "params": {}
+                    },
+                    "props": {
+                      "placeholder": "multi_language{util_input_shop}",
+                      "showSearch": true
+                    }
+                  }
+                },
+                {
+                  "pathKey": "select",
+                  "title": "select",
+                  "infoMessage": "select",
+                  "widget": {
+                    "type": "$select",
+                    "request": {
+                      "url": "/oc/options",
+                      "params": {
+                        "input2": "input",
+                        "treeSelect": "treeSelect"
+                      }
+                    },
+                    "props": {
+                      "placeholder": "multi_language{util_input_shop}"
+                    }
+                  }
+                },
+                {
+                  "pathKey": "searchInput",
+                  "title": "searchInput",
+                  "widget": {
+                    "type": "$searchInput",
+                    "request": {
+                      "url": "/oc/options",
+                      "params": {}
+                    },
+                    "props": {
+                      "placeholder": "multi_language{util_input_shop}"
+                    }
+                  }
+                },
+                {
+                  "pathKey": "dateRange",
+                  "title": "dateRange",
+                  "widget": {
+                    "type": "$dateRange"
+                  }
+                },
+                {
+                  "pathKey": "datePicker",
+                  "title": "datePicker",
+                  "widget": {
+                    "type": "$datePicker",
+                    "props": {
+                      "showTime": true,
+                      "format": "YYYY-MM-DD HH:mm:ss"
+                    }
+                  }
+                },
+                {
+                  "pathKey": "month",
+                  "title": "month",
+                  "infoMessage": "阿斯达",
+                  "widget": {
+                    "type": "$monthPicker"
+                  }
+                },
+                {
+                  "pathKey": "radio",
+                  "title": "radio",
+                  "widget": {
+                    "type": "$radio",
+                    "defaultValue": 11,
+                    "request": {
+                      "url": "/oc/options"
+                    }
+                  }
+                },
+                {
+                  "pathKey": "checkboxGroup",
+                  "title": "checkboxGroup",
+                  "infoMessage": "阿斯达",
+                  "widget": {
+                    "type": "$checkbox",
+                    "request": {
+                      "url": "/oc/options"
+                    }
+                  }
+                },
+                {
+                  "pathKey": "imgUpload",
+                  "title": "imgUpload",
+                  "infoMessage": "imgUpload",
+                  "widget": {
+                    "type": "$imgUpload",
+                    "request": {
+                      "url": "/oc/options"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "onOk": {
+
+          }
+        }
+      ]
+    }
+  }
+}

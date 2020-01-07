@@ -1,0 +1,32 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": [
+    {
+      "text": "全部",
+      "value": 0,
+      "data": {
+        "autoComplete": "123123"
+      }
+    },
+    {
+      "text": "枚举1",
+      "value": "2",
+      "data": {
+        "autoComplete": "0"
+      }
+    },
+    {
+      "text": "枚举233",
+      "value": 3,
+      "data": {
+        "autoComplete": "555阿斯达",
+        "job": "阿斯达好好好"
+      }
+    },
+    {
+      "text": "枚举2枚举224",
+      "value": 4
+    }
+  ]
+}

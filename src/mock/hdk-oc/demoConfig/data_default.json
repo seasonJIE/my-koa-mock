@@ -1,0 +1,440 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "demoConfig": {
+      "criterion": [
+        {
+          "pathKey": "input",
+          "title": "input",
+          "widget": {
+            "type": "$input",
+            "props": {
+              "placeholder": "二和"
+            }
+          }
+        },
+        {
+          "pathKey": "treeSelect",
+          "title": "treeSelect",
+          "widget": {
+            "type": "$treeSelect",
+            "request": {
+              "url": "/oc/cascader",
+              "params": {
+                "text": "123123"
+              }
+            },
+            "props": {
+              "multiple": true,
+              "placeholder": "请选择门店",
+              "showCheckedStrategy": "SHOW_CHILD",
+              "showSearch": true,
+              "treeCheckable": true,
+              "treeNodeFilterProp": "text"
+            }
+          }
+        },
+        {
+          "pathKey": "cascader",
+          "title": "cascader",
+          "widget": {
+            "type": "$cascader",
+            "request": {
+              "url": "/oc/cascader",
+              "params": {}
+            },
+            "props": {
+              "placeholder": "multi_language{util_input_shop}",
+              "showSearch": true
+            }
+          }
+        },
+        {
+          "pathKey": "select",
+          "title": "select",
+          "widget": {
+            "type": "$select",
+            "request": {
+              "url": "/oc/options",
+              "params": {}
+            },
+            "props": {
+              "placeholder": "multi_language{util_input_shop}"
+            }
+          }
+        },
+        {
+          "pathKey": "searchInput",
+          "title": "searchInput",
+          "widget": {
+            "type": "$searchInput",
+            "request": {
+              "url": "/oc/options",
+              "params": {}
+            },
+            "props": {
+              "placeholder": "multi_language{util_input_shop}"
+            }
+          }
+        },
+        {
+          "pathKey": "dateRange",
+          "title": "dateRange",
+          "widget": {
+            "type": "$dateRange"
+          }
+        },
+        {
+          "pathKey": "datePicker",
+          "title": "datePicker",
+          "widget": {
+            "type": "$datePicker",
+            "props": {
+              "showTime": true,
+              "format": "YYYY-MM-DD HH:mm:ss"
+            }
+          }
+        },
+        {
+          "pathKey": "month",
+          "title": "month",
+          "widget": {
+            "type": "$monthPicker"
+          }
+        },
+        {
+          "pathKey": "radio",
+          "title": "radio",
+          "widget": {
+            "type": "$radio",
+            "defaultValue": 11,
+            "request": {
+              "url": "/oc/options"
+            }
+          }
+        },
+        {
+          "pathKey": "checkboxGroup",
+          "title": "checkboxGroup",
+          "widget": {
+            "type": "$checkbox",
+            "request": {
+              "url": "/oc/options"
+            }
+          }
+        }
+      ],
+      "columns": [
+        {
+          "pathKey": "name",
+          "title": "multi_language{asdasd}",
+          "infoMessage": "阿斯顿撒大萨达撒多",
+          "render": [
+            {
+              "pathKey": "label",
+              "label": "label"
+            }
+          ]
+        },
+        {
+          "pathKey": "name2",
+          "title": "multi_language{asdasd}",
+          "label": "jeep",
+          "infoMessage": "阿斯顿撒大萨达撒多"
+        },
+        {
+          "pathKey": "job",
+          "title": "工作",
+          "infoMessage": "阿斯顿撒大萨达撒多",
+          "children": [
+            {
+              "pathKey": "childrenName",
+              "title": "childrenName",
+              "infoMessage": "阿斯顿撒大萨达撒多"
+            },
+            {
+              "pathKey": "childrenName2",
+              "title": "childrenName2"
+            },
+            {
+              "key": "age",
+              "title": "age",
+              "infoMessage": "阿斯顿撒大萨达撒多",
+              "render": [
+                {
+                  "pathKey": "age",
+                  "type": {
+                    "value": "$link",
+                    "options": {
+                      "target": "$newTab",
+                      "path": "/report2/sales/detail",
+                      "params": {
+                        "orderId": "age",
+                        "orderType": "job"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "age",
+          "title": "age",
+          "infoMessage": "阿斯顿撒大萨达撒多",
+          "render": [
+            {
+              "pathKey": "age",
+              "type": {
+                "value": "$link",
+                "options": {
+                  "target": "$modal",
+                  "modal": {
+                    "params": {
+                      "id": "age"
+                    },
+                    "path": "/url"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "key": "operation",
+          "title": "操作",
+          "render": [
+            {
+              "text": "查看",
+              "key": "viewItem",
+              "type": {
+                "value": "$link",
+                "options": {
+                  "target": "$modal"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "gridColumns": [
+        {
+          "title": "name",
+          "pathKey": "name",
+          "infoMessage": "aasd"
+        },
+        {
+          "title": "input",
+          "pathKey": "job",
+          "readonly": true,
+          "widget": {
+            "type": "$input"
+          }
+        },
+        {
+          "title": "autoComplete",
+          "pathKey": "autoComplete",
+          "readonly": false,
+          "widget": {
+            "type": "$autoComplete",
+            "request": {
+              "url": "/oc/gridAutoComplete",
+              "params": {
+                "text": "abab"
+              }
+            },
+            "link": {
+              "autoComplete": "autoComplete",
+              "job": "job",
+              "name": "sex"
+            }
+          }
+        },
+        {
+          "title": "requestAutoComplete",
+          "pathKey": "requestAutoComplete",
+          "readonly": false,
+          "widget": {
+            "type": "$autoComplete",
+            "request": {
+              "url": "/oc/gridAutoComplete"
+            },
+            "autoRequest": {
+              "url": "/oc/gridCheckSku",
+              "data": "skuVo"
+            },
+            "link": "all"
+          }
+        },
+        {
+          "title": "select",
+          "pathKey": "select",
+          "widget": {
+            "type": "$select"
+          }
+        },
+        {
+          "title": "dataRange",
+          "pathKey": "dataRange",
+          "widget": {
+            "type": "$dateRange"
+          }
+        },
+        {
+          "title": "dataPicker",
+          "pathKey": "dataPicker",
+          "widget": {
+            "type": "$datePicker"
+          }
+        },
+        {
+          "title": "monthPicker",
+          "pathKey": "monthPicker",
+          "widget": {
+            "type": "$monthPicker"
+          }
+        }
+      ],
+      "formColumns": [
+        {
+          "pathKey": "input",
+          "title": "input",
+          "widget": {
+            "type": "$input",
+            "require": "呵呵必填",
+            "props": {
+              "placeholder": "二和"
+            }
+          }
+        },
+        {
+          "pathKey": "treeSelect",
+          "title": "treeSelect",
+          "widget": {
+            "type": "$treeSelect",
+            "request": {
+              "url": "/oc/cascader",
+              "params": {
+                "text": "123123"
+              }
+            },
+            "require": "呵呵必填",
+            "props": {
+              "multiple": true,
+              "placeholder": "请选择门店",
+              "showCheckedStrategy": "SHOW_CHILD",
+              "showSearch": true,
+              "treeCheckable": true,
+              "treeNodeFilterProp": "text"
+            }
+          }
+        },
+        {
+          "pathKey": "cascader",
+          "title": "cascader",
+          "widget": {
+            "type": "$cascader",
+            "request": {
+              "url": "/oc/cascader",
+              "params": {}
+            },
+            "props": {
+              "placeholder": "multi_language{util_input_shop}",
+              "showSearch": true
+            }
+          }
+        },
+        {
+          "pathKey": "select",
+          "title": "select",
+          "infoMessage": "select",
+          "widget": {
+            "type": "$select",
+            "request": {
+              "url": "/oc/options",
+              "params": {}
+            },
+            "props": {
+              "placeholder": "multi_language{util_input_shop}"
+            }
+          }
+        },
+        {
+          "pathKey": "searchInput",
+          "title": "searchInput",
+          "widget": {
+            "type": "$searchInput",
+            "request": {
+              "url": "/oc/options",
+              "params": {}
+            },
+            "props": {
+              "placeholder": "multi_language{util_input_shop}"
+            }
+          }
+        },
+        {
+          "pathKey": "dateRange",
+          "title": "dateRange",
+          "widget": {
+            "type": "$dateRange"
+          }
+        },
+        {
+          "pathKey": "datePicker",
+          "title": "datePicker",
+          "widget": {
+            "type": "$datePicker",
+            "props": {
+              "showTime": true,
+              "format": "YYYY-MM-DD HH:mm:ss"
+            }
+          }
+        },
+        {
+          "pathKey": "month",
+          "title": "month",
+          "infoMessage": "阿斯达",
+          "widget": {
+            "type": "$monthPicker"
+          }
+        },
+        {
+          "pathKey": "radio",
+          "title": "radio",
+          "widget": {
+            "type": "$radio",
+            "defaultValue": 11,
+            "request": {
+              "url": "/oc/options"
+            }
+          }
+        },
+        {
+          "pathKey": "checkboxGroup",
+          "title": "checkboxGroup",
+          "infoMessage": "阿斯达",
+          "widget": {
+            "type": "$checkbox",
+            "request": {
+              "url": "/oc/options"
+            }
+          }
+        },
+        {
+          "pathKey": "imgUpload",
+          "title": "imgUpload",
+          "infoMessage": "imgUpload",
+          "widget": {
+            "type": "$imgUpload",
+            "request": {
+              "url": "/oc/options"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

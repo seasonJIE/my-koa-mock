@@ -1,0 +1,18 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "orgRangeType": 1,
+    "orgId": 123,
+    "orgName": "按门店",
+    "displayList": [
+      {
+        "skuId": 123123,
+        "manufacturerCode": 123123,
+        "articleNumber": 111111233,
+        "name": "产品",
+        "displayQuantity": 122
+      }
+    ]
+  }
+}

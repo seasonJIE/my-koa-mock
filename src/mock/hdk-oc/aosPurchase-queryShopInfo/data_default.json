@@ -1,0 +1,39 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "list": [
+      {
+        "aosReceiptShopId": 11,
+        "orgSerial": "CN001",
+        "orgName": "测试门店"
+      },
+      {
+        "aosReceiptShopId": 12,
+        "orgSerial": "CN001",
+        "orgName": "测试门店"
+      },
+      {
+        "aosReceiptShopId": 13,
+        "orgSerial": "CN001",
+        "orgName": "测试门店"
+      },
+      {
+        "aosReceiptShopId": 11,
+        "orgSerial": "CN001",
+        "orgName": "测试门店"
+      },
+      {
+        "aosReceiptShopId": 11,
+        "orgSerial": "CN001",
+        "orgName": "测试门店"
+      },
+      {
+        "aosReceiptShopId": 11,
+        "orgSerial": "CN001",
+        "orgName": "测试门店"
+      }
+    ],
+    "count": 21
+  }
+}

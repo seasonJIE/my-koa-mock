@@ -1,0 +1,11 @@
+{
+  "name": "node-koa",
+  "version": "1.0.0",
+  "dependencies": {
+    "koa": "latest",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  }
+}

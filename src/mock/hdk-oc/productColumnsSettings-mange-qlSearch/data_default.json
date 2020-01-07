@@ -1,0 +1,20 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "list": [
+      {
+        "orgId": 1231,
+        "orgSerial": 123123,
+        "orgName": "阿斯达",
+        "skuId": 123,
+        "manufacturerCode": 123123,
+        "articleNumber": 11111,
+        "name": "阿斯达",
+        "productCategoryDesc": "asd 的",
+        "displayQuantity": 21
+      }
+    ],
+    "count": 21
+  }
+}

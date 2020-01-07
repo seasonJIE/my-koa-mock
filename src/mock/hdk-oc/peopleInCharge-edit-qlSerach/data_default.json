@@ -1,0 +1,14 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "list": [
+      {
+        "manufacturerCode": 123123123,
+        "articleNumber": 123123222,
+        "name": "阿斯达"
+      }
+    ],
+    "count": 21
+  }
+}

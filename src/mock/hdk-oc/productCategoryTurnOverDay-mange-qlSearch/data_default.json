@@ -1,0 +1,19 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "list": [
+      {
+        "productInfo": "category",
+        "turnOverDay": 21,
+        "dayType": 1
+      },
+      {
+        "productInfo": "category",
+        "turnOverDay": 21,
+        "dayType": 2
+      }
+    ],
+    "count": 21
+  }
+}

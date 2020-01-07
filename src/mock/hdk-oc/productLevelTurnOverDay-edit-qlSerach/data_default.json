@@ -1,0 +1,15 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "list": [
+      {
+        "levelTurnOverDayId": 123123123,
+        "productLevel": 1,
+        "turnOverDay": 22,
+        "productLevelDesc": "12a"
+      }
+    ],
+    "count": 21
+  }
+}

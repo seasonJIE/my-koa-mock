@@ -1,0 +1,149 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": [
+    {
+      "iconUrl": " ",
+      "id": 25,
+      "isActive": false,
+      "isMenu": 1,
+      "languageKey": "user_menu_name_90",
+      "level": 0,
+      "name": "首页",
+      "parentId": 0,
+      "sequence": 1,
+      "subMenu": [],
+      "type": 1,
+      "url": "/dashboard/innisfree"
+    },
+    {
+      "iconUrl": "icon-organization",
+      "id": 5,
+      "isActive": false,
+      "isMenu": 1,
+      "languageKey": "user_menu_name_5",
+      "level": 0,
+      "name": "组织",
+      "parentId": 0,
+      "permissionId": [
+        5,
+        6,
+        23,
+        25
+      ],
+      "sequence": 2,
+      "subMenu": [],
+      "type": 1,
+      "url": "/organization"
+    },
+    {
+      "iconUrl": "icon-sell",
+      "id": 4,
+      "isActive": false,
+      "isMenu": 1,
+      "languageKey": "user_menu_name_4",
+      "level": 0,
+      "name": "产品",
+      "parentId": 0,
+      "permissionId": [
+        1,
+        2
+      ],
+      "sequence": 3,
+      "subMenu": [],
+      "type": 1,
+      "url": "/product"
+    },
+    {
+      "iconUrl": "icon-vip",
+      "id": 2,
+      "isActive": false,
+      "isMenu": 1,
+      "languageKey": "user_menu_name_2",
+      "level": 0,
+      "name": "会员",
+      "parentId": 0,
+      "permissionId": [
+        13,
+        14,
+        16,
+        17,
+        18
+      ],
+      "sequence": 4,
+      "subMenu": [],
+      "type": 1,
+      "url": "/member"
+    },
+    {
+      "iconUrl": "icon-sale",
+      "id": 3,
+      "isActive": false,
+      "isMenu": 1,
+      "languageKey": "user_menu_name_3",
+      "level": 0,
+      "name": "营销",
+      "parentId": 0,
+      "permissionId": [
+        20,
+        21
+      ],
+      "sequence": 5,
+      "subMenu": [],
+      "type": 1,
+      "url": "/promotion"
+    },
+    {
+      "iconUrl": "icon-depot",
+      "id": 6,
+      "isActive": true,
+      "isMenu": 1,
+      "languageKey": "user_menu_name_6",
+      "level": 0,
+      "name": "进销存",
+      "parentId": 0,
+      "permissionId": [
+        27,
+        28
+      ],
+      "sequence": 6,
+      "subMenu": [],
+      "type": 1,
+      "url": "/stock"
+    },
+    {
+      "iconUrl": "icon-report",
+      "id": 7,
+      "isActive": false,
+      "isMenu": 1,
+      "languageKey": "user_menu_name_7",
+      "level": 0,
+      "name": "报表",
+      "parentId": 0,
+      "permissionId": [
+        54
+      ],
+      "sequence": 7,
+      "subMenu": [],
+      "type": 1,
+      "url": "/report"
+    },
+    {
+      "iconUrl": "icon-set",
+      "id": 8,
+      "isActive": false,
+      "isMenu": 1,
+      "languageKey": "user_menu_name_8",
+      "level": 0,
+      "name": "设置",
+      "parentId": 0,
+      "permissionId": [
+        81
+      ],
+      "sequence": 8,
+      "subMenu": [],
+      "type": 1,
+      "url": "/settings"
+    }
+  ]
+}

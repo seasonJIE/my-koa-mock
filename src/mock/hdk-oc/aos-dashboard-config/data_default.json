@@ -1,0 +1,14 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "params": {
+      "Cookie": "M1WyqMVR9hsazB0Bt%2BoqHf8wnnojOWen00gs7SF7YURLuPZSqlHuC2%2FAqJ%2Fhc3BGwiRm393FLruuQyST0%2FDDDs6TQeLBSko8nSiIrMw5yODJ87Hr2%2F90dfBQn1a%2FI6Q8erZEhC8N0m%2FtAo9b%2Be%2BvU2ev11X3A4m%2F2TECZi7syuiVPVVzlpgdSaAbzGI0URNKjZPQMmf4ot16YDPJjhLKizQwHi1s1A%2Fm8U6PPLWHT6M%3D",
+      "cutomerid": 1015,
+      "languageCode": "0001",
+      "reportType": 1,
+      "userid": 1
+    },
+    "url": "http://192.168.102.93:11111/dashboard/"
+  }
+}

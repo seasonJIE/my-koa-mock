@@ -1,0 +1,18 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": [
+    {
+      "text": "a",
+      "value": 1
+    },
+    {
+      "text": "b",
+      "value": 2
+    },
+    {
+      "text": "c",
+      "value": 3
+    }
+  ]
+}

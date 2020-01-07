@@ -1,0 +1,28 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": [
+    {
+      "text": "123123",
+      "value": 1,
+      "data": {
+        "skuId": 123,
+        "manufacturerCode": 123123,
+        "productName": "产品名称特别长咋么版产品名称特别长咋么版",
+        "articleNumber": 12321333,
+        "skuInfo": "asd123"
+      }
+    },
+    {
+      "text": "1231233",
+      "value": 2,
+      "data": {
+        "skuId": 123323,
+        "manufacturerCode": 22222,
+        "productName": "sad",
+        "articleNumber": 12321333,
+        "skuInfo": "asd123"
+      }
+    }
+  ]
+}

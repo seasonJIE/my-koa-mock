@@ -1,0 +1,30 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": [
+    {
+      "text": "asd啊",
+      "value": 1,
+      "children": [
+        {
+          "text": "阿斯达1",
+          "value": 11
+        },
+        {
+          "text": "阿斯达2",
+          "value": 12,
+          "children": [
+            {
+              "text": "阿斯达21",
+              "value": 121
+            }
+          ]
+        },
+        {
+          "text": "阿斯达3",
+          "value": 13
+        }
+      ]
+    }
+  ]
+}

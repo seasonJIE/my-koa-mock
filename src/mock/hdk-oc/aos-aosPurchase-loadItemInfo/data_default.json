@@ -1,0 +1,27 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "list": [
+      {
+        "skuId": 123,
+        "manufacturerCode": "产品编码",
+        "productName": "产品名称",
+        "detailType": 1,
+        "detailTypeDesc": "铺货类型",
+        "apcStock": "// 物流库存",
+        "suggestCount": 3000,
+        "aosCount": 123,
+        "skuMultiplier": 2,
+        "normalLogicStock": 100,
+        "sampleLogicStock": 12,
+        "preInStock": 33,
+        "thirtyAverageSale": 100,
+        "turnOverDayBefore": "铺货前周转天",
+        "turnOverDayAfter": "铺货后周转天",
+        "notHandleQuantity": "当天已铺货数量"
+      }
+    ],
+    "count": 21
+  }
+}

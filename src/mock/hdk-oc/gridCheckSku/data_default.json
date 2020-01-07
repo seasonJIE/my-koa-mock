@@ -1,0 +1,14 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data":{
+    "msg": null,
+    "skuVo": {
+      "c": "粑粑",
+      "requestAutoComplete": "阿斯达requestAutoComplete",
+      "label": "label",
+      "job": "办公"
+    }
+  }
+
+}

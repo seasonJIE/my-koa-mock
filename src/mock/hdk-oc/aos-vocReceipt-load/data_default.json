@@ -1,0 +1,37 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "serial": "voc-0001",
+    "createDate": "创建时间",
+    "stautsDesc": "状态",
+    "orgName": "申请门店",
+    "memo": "备注",
+    "skuList": [
+      {
+        "manufacturerCode": "产品编码",
+        "productName": "产品名称",
+        "applyQuantity": "申请数量",
+        "confirmQuantity": 3,
+        "applyPromotionFromTime": "2019-10-9 10:00",
+        "applyPromotionToTime": "2019-10-9 10:00",
+        "salableStock": "门店库存",
+        "preInStock": "运输在途库存",
+        "lastAosDate": "上一次铺货日期",
+        "lastAosQuantity": "上一次铺货数量"
+      },
+      {
+        "manufacturerCode": "产品编码",
+        "productName": "产品名称",
+        "applyQuantity": "申请数量",
+        "confirmQuantity": 5,
+        "applyPromotionFromTime": "2019-10-9 10:00",
+        "applyPromotionToTime": "2019-10-9 10:00",
+        "salableStock": "门店库存",
+        "preInStock": "运输在途库存",
+        "lastAosDate": "上一次铺货日期",
+        "lastAosQuantity": "上一次铺货数量"
+      }
+    ]
+  }
+}

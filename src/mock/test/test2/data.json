@@ -1,0 +1,10 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "languageCode": "0001",
+    "languageValues": {
+      "dashboard_point_gold": "我是爸爸"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "id": 123,
+    "aosType": 2,
+    "aosReceiptId": 123,
+    "skuList": [
+      {
+        "aosReceiptSkuId": 12312,
+        "aosReceiptId": 123123,
+        "skuId": 123123,
+        "manufacturerCode": 1312321321,
+        "articleNumber": 12312312312,
+        "productName": "产品名称",
+        "calType": 1,
+        "calTypeDesc": "参考方式",
+        "referToSkuId": 123,
+        "referToSkuInfo": "12313产考产品",
+        "apcStock": "物流库存",
+        "thirtyAverageSale": 12,
+        "referToSkuThirtyAverageSale": 33,
+        "stockAndPreInStock": 44,
+        "sampleStock": 55,
+        "newSumQuantity": 66,
+        "shopAverage": 7
+      }
+    ]
+  }
+}
